@@ -1,0 +1,21 @@
+total = 0
+
+for i in range(0,3):
+    input1 = int(input(""))
+    input2 = int(input(""))
+    input3 = int(input(""))
+    if input1 == input2 and input1 == input3:
+        total += input1+input2+input3
+    elif input1 == input2:
+        total += input1 + input2
+    elif input1 == input3:
+        total += input1 + input3
+    elif input2 == input3:
+        total += input2 + input3
+
+print("Total was",total)
+
+if total >= 30:
+    print("Winner")
+else:
+    print("Loser")
